@@ -1750,5 +1750,126 @@
   </div>
 </section>
 
+<!-- 
+  SUPER-ALE — Footer legale v2.0 (cinematografico)
+  Da incollare PRIMA del tag </body> nell'index.html
+-->
+
+<style>
+  .superale-footer {
+    background: #00163d;
+    color: #ffffff;
+    padding: 64px 24px 48px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-align: center;
+    line-height: 1.6;
+  }
+  .superale-footer-inner {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .superale-footer .footer-logo {
+    color: #f9c108;
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+  .superale-footer .footer-tagline {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    margin-bottom: 36px;
+    letter-spacing: 0.3px;
+  }
+  .superale-footer .footer-links {
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  .superale-footer .footer-links a {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    transition: color 0.3s ease;
+    position: relative;
+  }
+  .superale-footer .footer-links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -4px;
+    height: 1px;
+    background: #f9c108;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: center;
+  }
+  .superale-footer .footer-links a:hover {
+    color: #f9c108;
+  }
+  .superale-footer .footer-links a:hover::after {
+    transform: scaleX(1);
+  }
+  .superale-footer .footer-divider {
+    width: 60px;
+    height: 1px;
+    background: rgba(249, 193, 8, 0.3);
+    margin: 32px auto;
+  }
+  .superale-footer .footer-company {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    line-height: 1.8;
+  }
+  .superale-footer .footer-company a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+  }
+  .superale-footer .footer-company a:hover {
+    color: #f9c108;
+  }
+  
+  @media (max-width: 600px) {
+    .superale-footer {
+      padding: 48px 20px 32px;
+    }
+    .superale-footer .footer-links {
+      flex-direction: column;
+      gap: 18px;
+    }
+    .superale-footer .footer-logo {
+      font-size: 13px;
+    }
+  }
+</style>
+
+<footer class="superale-footer">
+  <div class="superale-footer-inner">
+    <div class="footer-logo">SUPER-ALE</div>
+    <div class="footer-tagline">Ogni runner ha iniziato dallo stesso punto in cui sei tu adesso.</div>
+    
+    <nav class="footer-links">
+      <a href="https://piani.super-ale.com/termini.html">Termini e Condizioni</a>
+      <a href="https://piani.super-ale.com/privacy.html">Privacy Policy</a>
+      <a href="https://piani.super-ale.com/cookie-policy.html">Cookie Policy</a>
+      <a href="https://piani.super-ale.com/disclaimer-sanitario.html">Disclaimer Sanitario</a>
+    </nav>
+    
+    <div class="footer-divider"></div>
+    
+    <div class="footer-company">
+      © 2026 Super-Ale LLC · Trade License Shams n. 2645640.01<br>
+      Sharjah Media City Free Zone, United Arab Emirates<br>
+      <a href="mailto:info@super-ale.com">info@super-ale.com</a>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
